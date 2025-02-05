@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Formation of the Solar System and Moon</title>
+    <style>
+        /* Global reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #162447, #0f3460);
+            color: white;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            animation: fadeInHeader 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 4.5em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            color: #ffcc00;
+            animation: floatUp 2s ease-in-out infinite alternate;
+        }
+
+        header p {
+            font-size: 1.5em;
+            color: #f7f7f7;
+            margin-top: 10px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 100;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #f7f7f7;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .content {
+            padding: 120px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .highlight {
+            color: #2e6dff;
+            font-weight: bold;
+        }
+
+        .btn-learn-more {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #2e6dff;
+            color: white;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-learn-more:hover {
+            background-color: #1e56b5;
+        }
+
+        .image-gallery {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .image-gallery img {
+            width: 30%;
+            border-radius: 12px;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInHeader {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom Cursor */
+        body {
+            cursor: url('https://www.transparenttextures.com/patterns/starry-night.png'), auto;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            background-color: #222;
+            color: #fff;
+            position: relative;
+        }
+
+        .footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            color: #f7f7f7;
+        }
+
+        /* Parallax Effect */
+        .parallax {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .parallax img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            animation: parallax 30s linear infinite;
+        }
+
+        @keyframes parallax {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Formation of the Solar System and Moon</h1>
+        <p>Discover how the Solar System and Moon came into existence!</p>
+    </header>
+    
+    <nav>
+        <a href="#solar-system">Solar System</a>
+        <a href="#moon-formation">Moon Formation</a>
+        <a href="#image-gallery">Gallery</a>
+    </nav>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />><br /><br /><br /><br />
+    <div class="content">
+        <section id="solar-system" class="section">
+            <h2>Formation of the Solar System</h2>
+            <p>The Solar System formed around 4.6 billion years ago from the collapse of a massive molecular cloud known as the <span class="highlight">solar nebula</span>. As the cloud collapsed, it began to spin and flatten into a rotating disk. At the center, gravity caused the Sun to ignite, while the remaining gas and dust particles formed the planets, moons, and other bodies.</p>
+            <p>Inner planets like Earth and Venus formed from heavy elements, while outer planets like Jupiter and Saturn formed further away with lighter gases. The process of <span class="highlight">accretion</span> created the planets we see today, gradually growing larger over millions of years.</p>
+            <img style="width: 75%;" src="https://contenthub.llnl.gov/sites/contenthub/files/styles/orig/public/news/2020-11/solar_system_formation_875x500px.jpg?itok=AM_F4r9e" alt="Formation of Solar System" />
+            
+        </section>
+
+        <section id="moon-formation" class="section">
+            <h2>Formation of the Moon</h2>
+            <p>The Moon is believed to have formed about 4.5 billion years ago after a collision between Earth and a Mars-sized body called <span class="highlight">Theia</span>. The impact sent debris into space, which eventually came together to form the Moon.</p>
+            <p>This event also tilted Earth’s axis and stabilized its rotation, which helped create the conditions necessary for life to thrive. Over billions of years, the Moon’s gravitational pull has shaped the tides and affected Earth's climate.</p>
+            <img style="width: 75%;" src="https://hips.hearstapps.com/hmg-prod/images/illustration-of-the-giant-impact-hypothesis-with-the-news-photo-1647456125.jpg" alt="Formation of Solar System" />
+        </section>
+
+        <section id="image-gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="image-gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/The_Mysterious_Case_of_the_Disappearing_Dust.jpg/800px-The_Mysterious_Case_of_the_Disappearing_Dust.jpg" alt="Solar System Formation">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Artist%27s_concept_of_collision_at_HD_172555.jpg" alt="Giant Impact">
+                <img src="https://media.sciencephoto.com/image/r3400824/800wm/R3400824.jpg" alt="Moon Formation">
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Team Formation of the Solar System and the Moon</p>
+    </footer>
+
+    <script>
+        // Custom Cursor Script
+        const cursor = document.querySelector("body");
+        cursor.addEventListener("mousemove", (e) => {
+            cursor.style.setProperty("--x", e.clientX + "px");
+            cursor.style.setProperty("--y", e.clientY + "px");
+        });
+
+        // Parallax Effect
+        const parallaxImage = document.querySelector(".parallax img");
+        window.addEventListener("scroll", () => {
+            let scrollPosition = window.scrollY;
+            parallaxImage.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+        });
+    </script>
+
+</body>
+</html>
